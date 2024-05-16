@@ -11,7 +11,7 @@ app = FastAPI()
 with open('quotes.json', 'r') as f:
     quotes = json.load(f)
 
-@app.get('/quote', response_class=PlainTextResponse)
+@app.get('/', response_class=PlainTextResponse)
 def get_random_quote():
     random_quote = random.choice(quotes)
     return random_quote  # Return the quote text directly as plain text
