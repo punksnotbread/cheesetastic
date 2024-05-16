@@ -1,2 +1,3 @@
 # cheesetastic
-# cheesetastic
+
+api for inspirational quotes
